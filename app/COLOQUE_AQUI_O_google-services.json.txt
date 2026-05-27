@@ -1,0 +1,10 @@
+>>> IMPORTANTE <<<
+
+O arquivo "google-services.json" deve ficar nesta pasta (app/).
+
+Voce baixa esse arquivo no Firebase Console depois de criar o seu projeto.
+O passo a passo completo esta no README.md (na raiz do projeto).
+
+Sem esse arquivo o app NAO compila, porque ele liga o app ao seu Firebase.
+
+Depois de colocar o google-services.json aqui, pode apagar este arquivo .txt.

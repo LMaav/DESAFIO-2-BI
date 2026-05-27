@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Arquivo de configuracao do Firebase (cada um usa o seu).
+# Se quiser versionar, remova a linha abaixo.
+app/google-services.json

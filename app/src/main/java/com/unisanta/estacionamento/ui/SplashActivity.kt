@@ -5,10 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-// Tela inicial. So decide para onde mandar o usuario:
-// - Se ja esta logado -> Home
-// - Se nao esta logado -> Login
-// (RF-04: autenticacao persistente)
+
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +20,6 @@ class SplashActivity : AppCompatActivity() {
         }
 
         startActivity(Intent(this, destino))
-        finish() // fecha a splash para nao voltar a ela
+        finish()
     }
 }

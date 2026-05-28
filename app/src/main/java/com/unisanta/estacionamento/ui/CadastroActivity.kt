@@ -11,7 +11,7 @@ import com.unisanta.estacionamento.data.EstacionamentoRepository
 import com.unisanta.estacionamento.databinding.ActivityCadastroBinding
 import kotlinx.coroutines.launch
 
-// RF-02: cria conta no Firebase Auth e o documento do cliente no Firestore.
+
 class CadastroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCadastroBinding

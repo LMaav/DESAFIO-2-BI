@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.unisanta.estacionamento.app-mergeDebugResources-42:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\transforms-4\\5ae344d9580719a625d30a4a12c6b2aa\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

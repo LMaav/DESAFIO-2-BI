@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.unisanta.estacionamento.app-mergeDebugResources-42:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\transforms-4\\a4760a8a1e5fb108a593f490b4e2044e\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -15,7 +15,6 @@ import com.unisanta.estacionamento.data.EstacionamentoRepository
 import com.unisanta.estacionamento.databinding.ActivityGerenciarVagasBinding
 import kotlinx.coroutines.launch
 
-// RF-15: mostra todas as vagas (livres e ocupadas) e permite registrar entradas/ver detalhes.
 class GerenciarVagasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityGerenciarVagasBinding
@@ -39,19 +38,16 @@ class GerenciarVagasActivity : AppCompatActivity() {
                 binding.gridVagas.removeAllViews()
 
                 for (vaga in 1..config.totalVagas) {
-                    // vagasOcupadas usa a chave como String.
                     val placaNaVaga = config.vagasOcupadas[vaga.toString()]
                     val ocupada = placaNaVaga != null
 
                     val celula = TextView(this@GerenciarVagasActivity)
                     celula.text = if (ocupada) "Vaga $vaga\n$placaNaVaga" else "Vaga $vaga\nLivre"
                     celula.gravity = Gravity.CENTER
-                    celula.setTextColor(resources.getColor(R.color.branco, theme))
                     celula.setBackgroundResource(
                         if (ocupada) R.drawable.vaga_ocupada else R.drawable.vaga_livre
                     )
 
-                    // Define o tamanho da celula dentro do grid.
                     val params = GridLayout.LayoutParams()
                     params.width = 0
                     params.height = 220
@@ -75,7 +71,6 @@ class GerenciarVagasActivity : AppCompatActivity() {
         }
     }
 
-    // Ao tocar numa vaga livre, escolhemos um carro que esta FORA para registrar a entrada.
     private fun escolherCarroParaVaga(vaga: Int) {
         lifecycleScope.launch {
             try {
@@ -104,5 +99,8 @@ class GerenciarVagasActivity : AppCompatActivity() {
         intent.putExtra("placa", placa)
         intent.putExtra("vagaSugerida", vagaSugerida)
         startActivity(intent)
+
+        }
     }
-}
+
+

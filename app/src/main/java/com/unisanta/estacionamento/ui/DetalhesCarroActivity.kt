@@ -1,5 +1,6 @@
 package com.unisanta.estacionamento.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.view.View
@@ -15,7 +16,6 @@ import com.unisanta.estacionamento.data.EstacionamentoRepository
 import com.unisanta.estacionamento.databinding.ActivityDetalhesCarroBinding
 import kotlinx.coroutines.launch
 
-// Mostra os dados do carro e permite registrar entrada, saida e calcular o custo.
 class DetalhesCarroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetalhesCarroBinding
@@ -75,13 +75,11 @@ class DetalhesCarroActivity : AppCompatActivity() {
             Vaga: ${c.vagaAtual ?: "-"}
         """.trimIndent()
 
-        // Mostra os botoes conforme o estado do carro.
         val estacionado = c.status == "ESTACIONADO"
         binding.btnEntrada.visibility = if (estacionado) View.GONE else View.VISIBLE
         binding.btnSaida.visibility = if (estacionado) View.VISIBLE else View.GONE
     }
 
-    // RF-06: registrar entrada. Usa a vaga sugerida (se veio da grid) ou pergunta o numero.
     private fun registrarEntrada() {
         val c = carro ?: return
         if (vagaSugerida != -1) {
@@ -120,7 +118,6 @@ class DetalhesCarroActivity : AppCompatActivity() {
         }
     }
 
-    // RF-07: registrar saida.
     private fun registrarSaida() {
         val c = carro ?: return
         lifecycleScope.launch {
@@ -134,7 +131,6 @@ class DetalhesCarroActivity : AppCompatActivity() {
         }
     }
 
-    // RF-08: calcular o custo (precisa ter horaEntrada e horaSaida).
     private fun calcularCusto() {
         val c = carro ?: return
         if (c.horaEntrada == null || c.horaSaida == null) {
@@ -143,5 +139,6 @@ class DetalhesCarroActivity : AppCompatActivity() {
         }
         val custo = c.calcularCustoEstacionamento(config.tarifaPorHora)
         binding.txtCusto.text = "Custo: R$ %.2f".format(custo)
+
     }
 }

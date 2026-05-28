@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.unisanta.estacionamento.app-mergeDebugResources-43:/layout/activity_gerenciar_vagas.xml",
+        "source": "com.unisanta.estacionamento.app-main-46:/layout/activity_gerenciar_vagas.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_cliente_area.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_cliente_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_detalhes_carro.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_detalhes_carro.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_clientes.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_clientes.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_perfil.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_cadastrar_carro.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_cadastrar_carro.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_cadastro.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_cadastro.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-mergeDebugResources-43:\\layout\\activity_gerenciar_vagas.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\8.7\\com.unisanta.estacionamento.app-main-46:\\layout\\activity_gerenciar_vagas.xml"
+    }
+]

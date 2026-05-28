@@ -12,7 +12,7 @@ import com.unisanta.estacionamento.data.EstacionamentoRepository
 import com.unisanta.estacionamento.databinding.ActivityClientesBinding
 import kotlinx.coroutines.launch
 
-// Lista os clientes cadastrados e permite adicionar um novo.
+
 class ClientesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityClientesBinding
@@ -48,7 +48,6 @@ class ClientesActivity : AppCompatActivity() {
         }
     }
 
-    // Mostra um dialogo com dois campos (nome e telefone).
     private fun dialogAdicionar() {
         val layout = LinearLayout(this)
         layout.orientation = LinearLayout.VERTICAL

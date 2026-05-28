@@ -11,9 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estacionamento">
 
-        <!-- SplashActivity e a tela inicial (LAUNCHER) -->
+        <!-- PerfilActivity e a tela inicial (LAUNCHER): escolhe Operador ou Cliente -->
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".ui.PerfilActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.SplashActivity" />
+        <activity android:name=".ui.ClienteAreaActivity" />
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.CadastroActivity" />
         <activity android:name=".ui.HomeActivity" />

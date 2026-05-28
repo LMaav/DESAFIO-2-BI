@@ -12,7 +12,6 @@ import com.unisanta.estacionamento.data.EstacionamentoRepository
 import com.unisanta.estacionamento.databinding.ActivityCadastrarCarroBinding
 import kotlinx.coroutines.launch
 
-// RF-05: formulario para cadastrar um novo carro.
 class CadastrarCarroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCadastrarCarroBinding

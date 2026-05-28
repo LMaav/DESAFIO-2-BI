@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.unisanta.estacionamento.databinding.ActivityLoginBinding
 
-// RF-01: Login com e-mail e senha via Firebase Auth.
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding

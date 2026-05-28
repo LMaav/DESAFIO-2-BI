@@ -13,7 +13,7 @@ import com.unisanta.estacionamento.data.EstacionamentoRepository
 import com.unisanta.estacionamento.databinding.ActivityHomeBinding
 import kotlinx.coroutines.launch
 
-// Dashboard principal. Mostra total/livres e a lista de carros estacionados em tempo real.
+
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
@@ -45,11 +45,9 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
-        // Para de ouvir o Firestore quando a tela nao esta visivel.
         listener?.remove()
     }
 
-    // Le total de vagas e calcula as livres (RF-14).
     private fun carregarResumo() {
         lifecycleScope.launch {
             try {
@@ -62,11 +60,9 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    // RF-10: ouve em tempo real os carros com status ESTACIONADO.
     private fun ouvirCarrosEstacionados() {
         listener = repo.observarCarrosEstacionados { lista ->
             mostrarLista(lista)
-            // Atualiza o "livres" sempre que a lista muda.
             carregarResumo()
         }
     }
@@ -81,7 +77,6 @@ class HomeActivity : AppCompatActivity() {
             ArrayAdapter(this, android.R.layout.simple_list_item_1, textos)
     }
 
-    // RF-03: logout e volta para o login.
     private fun logout() {
         FirebaseAuth.getInstance().signOut()
         startActivity(Intent(this, LoginActivity::class.java))
